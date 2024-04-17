@@ -1,0 +1,19 @@
+﻿-- Crear la base de datos
+CREATE DATABASE RutasTuristicas;
+
+-- Usar la base de datos
+USE RutasTuristicas;
+
+-- Crear la tabla de clientes
+CREATE TABLE Clientes (
+    Id INT PRIMARY KEY IDENTITY,
+    Nombre NVARCHAR(100),
+    Email NVARCHAR(100),
+    Edad INT,
+    Tipo NVARCHAR(50)
+);
+
+-- Insertar algunos datos de ejemplo
+INSERT INTO Clientes (Nombre, Email, Edad, Tipo) VALUES ('Cliente 1', 'cliente1@example.com', 25, 'Promoción de colegios');
+INSERT INTO Clientes (Nombre, Email, Edad, Tipo) VALUES ('Cliente 2', 'cliente2@example.com', 70, 'Adulto mayor');
+INSERT INTO Clientes (Nombre, Email, Edad, Tipo) VALUES ('Cliente 3', 'cliente3@example.com', 30, 'Adulto menor de 60');
